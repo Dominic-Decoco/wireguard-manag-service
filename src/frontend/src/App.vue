@@ -1,10 +1,14 @@
 <script setup>
 
+import { ref } from 'vue';
+
+const value = ref(null);
+
 </script>
 
 <template>
-  <div>
-    Hello!
+  <div class="card flex justify-center">
+    <InputText type="text" placeholder="Test Text" v-model="value" />
   </div>
 </template>
 
