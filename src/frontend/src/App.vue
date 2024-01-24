@@ -1,6 +1,7 @@
 <script setup>
 
 import { ref } from 'vue';
+import Login from "./components/Login.vue";
 
 const value = ref(null);
 
@@ -8,7 +9,7 @@ const value = ref(null);
 
 <template>
   <div class="card flex justify-center">
-    <InputText type="text" placeholder="Test Text" v-model="value" />
+    <Login/>
   </div>
 </template>
 
